@@ -13,30 +13,30 @@ const initState: {
   comments: null
 };
 
-type addComment = {
+type AddComment = {
   type: 'ADD_COMMENT';
   payload: Comment;
 }
-export const addComment = (payload: Comment): addComment => {
+export const addComment = (payload: Comment): AddComment => {
   return {type: 'ADD_COMMENT', payload: payload};
 }
 
-type setComments = {
+type SetComments = {
   type: 'SET_COMMENTS';
   payload: Comment[];
 }
-export const setComments = (payload: Comment[]): setComments => {
+export const setComments = (payload: Comment[]): SetComments => {
   return {type: 'SET_COMMENTS', payload: payload};
 }
 
-const comments = (state = initState, action: addComment | setComments) => {
+const comments = (state = initState, action: AddComment | SetComments) => {
   switch (action.type) {
     case "SET_COMMENTS": {
       return {...state, comments: action.payload};
     }
     case "ADD_COMMENT": {
-      const comments = state.comments || [];
-      return {...state, comments: [...comments, action.payload]};
+      const stateComments = state.comments || [];
+      return {...state, comments: [...stateComments, action.payload]};
     }
     default:
       return state;
