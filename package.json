@@ -5,6 +5,7 @@
   "main": "app.ts",
   "scripts": {
     "webpack": "webpack",
+    "build:analyze": "webpack --env ANALYZE=true",
     "tsc:watch": "tsc --watch"
   },
   "author": "",
@@ -13,10 +14,11 @@
     "ts-loader": "^9.2.2",
     "typescript": "^4.3.2",
     "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.0"
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-null-plugin": "^0.0.2"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.5.1",
     "redux": "^4.1.0"
   }
 }

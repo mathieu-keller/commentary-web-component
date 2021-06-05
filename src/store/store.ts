@@ -1,5 +1,5 @@
-import {combineReducers, createStore} from '@reduxjs/toolkit';
 import comments from "./commentReducer";
+import {combineReducers, createStore} from "redux";
 
 
 const reducer = combineReducers({

@@ -8,28 +8,26 @@ class CommentBox extends HTMLElement {
     super();
     this.comments = [];
     store.subscribe(() => {
-      console.log(store.getState());
       this.comments = store.getState().comments.comments || [];
       this.connectedCallback();
     })
   }
 
   connectedCallback() {
-    const test =  this.comments.map(com => `
+    const test = this.comments.map(com => `
                 <div class="commentary-box" >
                   <div class="commentary-box-header">
-                      <div style="align-items: flex-start">Creator: ${com.creator}</div>
-                      <div style="align-items: flex-end">create: ${com.created}</div>
-                      <span>${com.text}</span>
+                     <sub style="background-color: #C2C2C2;display:flex; flex-direction: column; align-items: flex-end">create: ${com.created} (${com.creator})</sub>
+                     <hr style="margin-top: 0"/>
+                     <span style="padding: 1em">${com.text}</span>
                   </div>
                 </div>
-            `);
-    console.log(test);
+            `).reduce((a, b) => a + b);
     this.innerHTML = `
             <style>
             .commentary-box {
                 border: 1px solid black; 
-                padding: 1em;
+                padding: 0;
             }
             .commentary-box-header {
                 width: 100%;

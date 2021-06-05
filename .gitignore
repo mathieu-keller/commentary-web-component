@@ -1,1 +1,4 @@
 /commentary-service.iml
+/dist/
+/node_modules/
+/.idea/
