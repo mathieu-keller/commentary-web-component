@@ -14,15 +14,22 @@ class CommentBox extends HTMLElement {
   }
 
   connectedCallback() {
-    const test = this.comments.map(com => `
+    const comments = this.comments.map(com => `
                 <div class="commentary-box" >
                   <div class="commentary-box-header">
-                     <sub style="background-color: #C2C2C2;display:flex; flex-direction: column; align-items: flex-end">create: ${com.created} (${com.creator})</sub>
-                     <hr style="margin-top: 0"/>
-                     <span style="padding: 1em">${com.text}</span>
+                    <div style="background-color: #C2C2C2;display:flex; flex-direction: row; justify-content: space-between">
+                        <sub>${com.creator}</sub>
+                        <sub>
+                            ${new Intl.DateTimeFormat(navigator.language, {
+      dateStyle: 'full',
+      timeStyle: 'long'
+    }).format(new Date(com.created))}</sub>
+                    </div>
+                    <hr style="margin-top: 0"/>
+                    <pre style="padding: 0.25em">${com.text}</pre>
                   </div>
                 </div>
-            `).reduce((a, b) => a + b);
+            `);
     this.innerHTML = `
             <style>
             .commentary-box {
@@ -33,7 +40,7 @@ class CommentBox extends HTMLElement {
                 width: 100%;
             }           
             </style>
-            ${test}
+            ${comments.length > 0 ? comments.reduce((a, b) => a + b) : ''}
         `;
   }
 }

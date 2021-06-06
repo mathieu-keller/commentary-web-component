@@ -6,14 +6,25 @@ class CommentInput extends HTMLElement {
     super();
   }
 
-  onClick(value?: string) {
-    if (value === undefined) return;
+  escapeInput(input: string): string{
+    const map = new Map<string,string>([
+      ["&", "&amp;"],
+      ["<", "&lt;"],
+      [">", "&gt;"],
+      ["\"", "&quot;"],
+    ]);
+    return input.replaceAll(/[&<>"']/g, (m) => map.get(m) || m);
+  }
+
+  onClick(element: HTMLTextAreaElement | null) {
+    if (element === null || element.value === '') return;
     const newComment = {
-      text: value,
+      text: this.escapeInput(element.value) ,
       creator: 'test user',
-      created: new Date().toDateString(),
-      updater: 'test user',
-      updated: new Date().toDateString()};
+      created: new Date().toISOString(),
+      updater: null,
+      updated: null
+    };
     fetch('https://commentary-7f7cf-default-rtdb.europe-west1.firebasedatabase.app/.json',
       {
         method: 'PUT', // *GET, POST, PUT, DELETE, etc.
@@ -27,18 +38,30 @@ class CommentInput extends HTMLElement {
         redirect: 'follow', // manual, *follow, error
         referrerPolicy: 'no-referrer', body: JSON.stringify([...(store.getState().comments.comments || []), newComment])
       })
-      .then(() => store.dispatch(addComment(newComment))).catch(e => console.error(e));
+      .then(() => {
+        store.dispatch(addComment(newComment));
+        element.value = '';
+      }).catch(e => console.error(e));
 
   }
 
   connectedCallback() {
     this.innerHTML = `
-            <input/>
-            <button>save</button>
+            <textarea rows="7" placeholder="enter your comment...." style="resize: vertical;box-sizing: border-box;width: 100%"></textarea>
+            <div style="display: flex;
+              flex-direction: column;
+              align-items: flex-end;">
+              <button style="background-color: #EBEBEB;
+                padding: 1em;
+                border: 1px solid #BFBFBF;
+                width: 8em;">
+                    send
+              </button>
+              </div>
         `;
-    const input = this.getElementsByTagName('input').item(0);
+    const input = this.getElementsByTagName('textarea').item(0);
     this.getElementsByTagName('button')
-      .item(0)?.addEventListener('click', () => this.onClick(input?.value))
+      .item(0)?.addEventListener('click', () => this.onClick(input))
 
   }
 }
