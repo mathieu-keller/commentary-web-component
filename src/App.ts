@@ -20,7 +20,7 @@ class App extends HTMLElement {
   connectedCallback() {
     this.shadow.innerHTML = `
            <comment-box></comment-box>
-           <comment-input></comment-input>
+           <comment-input userId="${this.getAttribute('userId')}" userName="${this.getAttribute('userName')}"></comment-input>
         `;
   }
 }

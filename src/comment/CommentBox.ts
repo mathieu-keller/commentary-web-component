@@ -18,12 +18,12 @@ class CommentBox extends HTMLElement {
                 <div class="commentary-box" >
                   <div class="commentary-box-header">
                     <div style="background-color: #C2C2C2;display:flex; flex-direction: row; justify-content: space-between">
-                        <sub>${com.creator}</sub>
+                        <sub>${com.creatorName}</sub>
                         <sub>
                             ${new Intl.DateTimeFormat(navigator.language, {
-      dateStyle: 'full',
-      timeStyle: 'long'
-    }).format(new Date(com.created))}</sub>
+                              dateStyle: 'full',
+                              timeStyle: 'long'
+                            }).format(new Date(com.created))}</sub>
                     </div>
                     <hr style="margin-top: 0"/>
                     <pre style="padding: 0.25em">${com.text}</pre>

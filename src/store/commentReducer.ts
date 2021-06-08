@@ -1,10 +1,8 @@
 export type Comment = {
   readonly text: string;
   readonly created: string;
-  readonly creator: string;
-  readonly updated: string | null;
-  readonly updater: string | null;
-  readonly subComment?: Comment;
+  readonly creator: number;
+  readonly creatorName: string;
 }
 
 const initState: {

@@ -1,13 +1,13 @@
 import store from "../../store/store";
-import {addComment} from "../../store/commentReducer";
+import {addComment, Comment} from "../../store/commentReducer";
 
 class CommentInput extends HTMLElement {
   constructor() {
     super();
   }
 
-  escapeInput(input: string): string{
-    const map = new Map<string,string>([
+  escapeInput(input: string): string {
+    const map = new Map<string, string>([
       ["&", "&amp;"],
       ["<", "&lt;"],
       [">", "&gt;"],
@@ -18,12 +18,11 @@ class CommentInput extends HTMLElement {
 
   onClick(element: HTMLTextAreaElement | null) {
     if (element === null || element.value === '') return;
-    const newComment = {
-      text: this.escapeInput(element.value) ,
-      creator: 'test user',
+    const newComment: Comment = {
+      text: this.escapeInput(element.value),
+      creator: Number(this.getAttribute('userId')||''),
+      creatorName: this.getAttribute('userName') || 'unknown',
       created: new Date().toISOString(),
-      updater: null,
-      updated: null
     };
     fetch('https://commentary-7f7cf-default-rtdb.europe-west1.firebasedatabase.app/.json',
       {
@@ -46,6 +45,7 @@ class CommentInput extends HTMLElement {
   }
 
   connectedCallback() {
+    console.log();
     this.innerHTML = `
             <textarea rows="7" placeholder="enter your comment...." style="resize: vertical;box-sizing: border-box;width: 100%"></textarea>
             <div style="display: flex;
