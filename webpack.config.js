@@ -33,7 +33,7 @@ module.exports = env => {
           {},
           {
             inject: true,
-            template: './index.html',
+            template: './src/index.html',
           }, keepItSmall ? {
             minify: {
               removeComments: true,
