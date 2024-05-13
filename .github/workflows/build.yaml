@@ -1,0 +1,62 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+
+jobs:
+  cache-node-modules:
+    name: cache-node-modules
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Cache node_modules
+        uses: actions/cache@v4
+        id: npm-cache-node-modules
+        with:
+          path: node_modules
+          key: npm-cache-${{ hashFiles('yarn.lock') }}
+      - name: npm install if cache is invalid
+        if: ${{ steps.npm-cache-node-modules.outputs.cache-hit != 'true' }}
+        run: npm run yarn
+  build-frontend:
+    name: build-frontend
+    needs: [ cache-node-modules ]
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Cache node_modules
+        uses: actions/cache@v4
+        id: npm-cache-node-modules
+        with:
+          path: node_modules
+          key: npm-cache-${{ hashFiles('yarn.lock') }}
+      - name: build
+        run: |
+          npm run webpack
+  approve:
+    name: approve
+    runs-on: ubuntu-22.04
+    needs: [ build-frontend ]
+    if: ${{ github.event_name == 'pull_request' && github.event.pull_request.user.login == 'renovate[bot]' }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Approve PR if it has the trusted label
+        run: |
+          if [[ $(gh api /repos/${{ github.repository }}/issues/${{ github.event.number }}/labels | jq '.[] | .name' | grep -c "trusted") -ge 1 ]]; then
+            gh pr review ${{ github.event.number }} -a
+          fi

@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.ts",
   "scripts": {
-    "webpack": "webpack --watch",
+    "webpack": "webpack",
+    "webpack:watch": "webpack --watch",
     "build:analyze": "webpack --env ANALYZE=true",
     "tsc:watch": "tsc --watch",
     "format": "prettier --write ./src",
