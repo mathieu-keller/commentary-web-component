@@ -1,12 +1,15 @@
 import { Comments } from './Comments';
 import { Input } from './Input';
 
-const commentsTagName = 'comment-comments';
-if (!window.customElements.get(commentsTagName)) {
-  window.customElements.define(commentsTagName, Comments);
+interface Element {
+  new (): HTMLElement;
 }
 
-const inputTagName = 'comment-input';
-if (!window.customElements.get(inputTagName)) {
-  window.customElements.define(inputTagName, Input);
+function registerCustomElement(tagName: string, element: Element) {
+  if (!window.customElements.get(tagName)) {
+    window.customElements.define(tagName, element);
+  }
 }
+
+registerCustomElement('comment-comments', Comments);
+registerCustomElement('comment-input', Input);
