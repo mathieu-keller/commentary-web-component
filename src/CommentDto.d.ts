@@ -3,4 +3,4 @@ export type CommentDto = {
   readonly created: string;
   readonly creator: string;
   readonly creatorName: string;
-}
+};
