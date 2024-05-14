@@ -13,6 +13,7 @@ import MyGridTemplate from "./generated/templates/MyGridTemplate.lit.js";
 import MyGridCss from "./generated/themes/MyGrid.css.js";
 
 import { COUNT } from "./generated/i18n/i18n-defaults.js";
+import {Vocab} from "./MyVocabCreator";
 
 /**
  * @class
@@ -32,6 +33,22 @@ import { COUNT } from "./generated/i18n/i18n-defaults.js";
 	template: MyGridTemplate,
 })
 class MyGrid extends UI5Element {
+
+	listener = (event: Event) => {
+		console.log('received event add_vocab', event)
+		this.addVocab((event as CustomEvent<Vocab>).detail);
+	}
+
+	public onEnterDOM() {
+		console.log('enter')
+		window.addEventListener('add_vocab', this.listener);
+	}
+
+	public onExitDOM() {
+		console.log('exit')
+		window.removeEventListener('add_vocab', this.listener);
+	}
+
 	static i18nBundle: I18nBundle;
 
 	static async onDefine() {
@@ -39,23 +56,20 @@ class MyGrid extends UI5Element {
 		MyGrid.i18nBundle = await getI18nBundle("grid");
 	}
 
-	/**
-	 * Defines the component count.
-	 * @default 0
-	 * @public
-	 */
-	@property({ validator: Integer, defaultValue: 0 })
-	count!: number;
+	public vocab: Vocab[] = [{
+		german: 'test',
+		kanji: 'kanji1',
+		reading: 'reading123'
+	}];
 
-	public vocab: { german: string; reading: string; kanji: string}[] = [];
-
-	onClick() {
-		this.count++;
-		this.vocab = [...this.vocab, {german: 'Ich', reading: 'わたし', kanji: '私'}]
+	public get vocabs() {
+		return this.vocab
 	}
-
-	get counterText() {
-		return MyGrid.i18nBundle.getText(COUNT);
+	addVocab = (vocab: Vocab) => {
+		this.vocab = [...this.vocab, vocab];
+		console.log(this.vocab)
+		console.log(vocab)
+		this._render()
 	}
 }
 

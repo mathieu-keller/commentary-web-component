@@ -1,16 +1,16 @@
 <form @submit="{{onSubmit}}">
-<label for="german">German</label>
-<input name="german" id="german" type="text" @change="{{onChange}}"/><br/> <br/>
-<label for="reading">Reading</label>
-<input name="reading" id="reading" type="text" @change="{{onChange}}"/><br/><br/>
-<label for="kanji">Kanji</label>
-<input name="kanji" id="kanji" type="text" @change="{{onChange}}"/><br/>
-<hr/>
-<button
-        type="submit"
-        class="root"
-        @click="{{onClick}}"
->
-    Add Vocab
-</button>
+    <label for="german">German</label>
+    <input name="german" id="german" type="text" value="german"/><br/> <br/>
+    <label for="reading">Reading</label>
+    <input name="reading" id="reading" type="text" value="reading"/><br/><br/>
+    <label for="kanji">Kanji</label>
+    <input name="kanji" id="kanji" type="text" value="kanji"/><br/>
+    <hr/>
+    <button
+            type="submit"
+            class="root"
+            @click="{{onClick}}"
+    >
+        Add Vocab
+    </button>
 </form>

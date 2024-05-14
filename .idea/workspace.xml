@@ -5,48 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55e5d5b5-f1b1-4886-a329-12a54a756ede" name="Changes" comment="tryout ui5">
-      <change afterPath="$PROJECT_DIR$/.dev-server-port" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.npmrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/wdio.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyGrid.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyGrid.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyVocabCreator.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyVocabCreator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/messagebundle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/messagebundle_de.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/messagebundle_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/themes/MyGrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/themes/sap_fiori_3/parameters-bundle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/themes/sap_horizon/parameters-bundle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/themes/sap_horizon_dark/parameters-bundle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/themes/sap_horizon_hcb/parameters-bundle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/themes/sap_horizon_hcw/parameters-bundle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/pages/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/pages/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/pages/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/specs/Demo.spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CommentDto.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comments.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GlobalStyles.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HTMLComponent.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Input.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyGrid.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyGrid.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyVocabCreator.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyVocabCreator.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyVocabCreator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyVocabCreator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.md" beforeDir="false" afterPath="$PROJECT_DIR$/todo.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +166,7 @@
       <updated>1715064673689</updated>
       <workItem from="1715064674904" duration="20027000" />
       <workItem from="1715591552534" duration="10705000" />
-      <workItem from="1715668476653" duration="12698000" />
+      <workItem from="1715668476653" duration="15427000" />
     </task>
     <task id="LOCAL-00001" summary="test events and styling in shadow dom's">
       <option name="closed" value="true" />
@@ -228,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715612669414</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tryout ui5">
+      <option name="closed" value="true" />
+      <created>1715693541286</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715693541286</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
