@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="55e5d5b5-f1b1-4886-a329-12a54a756ede" name="Changes" comment="tryout ui5">
+      <change afterPath="$PROJECT_DIR$/.dev-server-port" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/wdio.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyGrid.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyGrid.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyVocabCreator.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyVocabCreator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/messagebundle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/messagebundle_de.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/messagebundle_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/themes/MyGrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/themes/sap_fiori_3/parameters-bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/themes/sap_horizon/parameters-bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/themes/sap_horizon_dark/parameters-bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/themes/sap_horizon_hcb/parameters-bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/themes/sap_horizon_hcw/parameters-bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pages/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pages/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pages/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/specs/Demo.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CommentDto.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comments.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GlobalStyles.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HTMLComponent.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="3jes0pz4" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2g821yyr3wsuRUVZlI5D8AggF92" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ui5&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mathieukeller/msg/commentary-web-component/src&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.build:analyze.executor&quot;: &quot;Run&quot;,
+    &quot;npm.clean.executor&quot;: &quot;Run&quot;,
+    &quot;npm.create-ui5-element.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.format.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;npm.tsc:watch.executor&quot;: &quot;Run&quot;,
+    &quot;npm.webpack.executor&quot;: &quot;Run&quot;,
+    &quot;npm.yarn.executor&quot;: &quot;Run&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/mathieukeller/msg/commentary-web-component/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/.github" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="clean" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="clean" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="create-ui5-element" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="create-ui5-element" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="yarn" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="yarn" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.clean" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.create-ui5-element" />
+        <item itemvalue="npm.yarn" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55e5d5b5-f1b1-4886-a329-12a54a756ede" name="Changes" comment="" />
+      <created>1715064673689</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715064673689</updated>
+      <workItem from="1715064674904" duration="20027000" />
+      <workItem from="1715591552534" duration="10705000" />
+      <workItem from="1715668476653" duration="12698000" />
+    </task>
+    <task id="LOCAL-00001" summary="test events and styling in shadow dom's">
+      <option name="closed" value="true" />
+      <created>1715611009387</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715611009387</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add automerge for renovate">
+      <option name="closed" value="true" />
+      <created>1715611946749</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715611946749</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add register function">
+      <option name="closed" value="true" />
+      <created>1715612669414</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715612669414</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test events and styling in shadow dom's" />
+    <MESSAGE value="add automerge for renovate" />
+    <MESSAGE value="add register function" />
+    <MESSAGE value="tryout ui5" />
+    <option name="LAST_COMMIT_MESSAGE" value="tryout ui5" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Input.ts</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

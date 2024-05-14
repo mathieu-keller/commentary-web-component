@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>my-grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <script data-ui5-config type="application/json">
+        {
+            "theme": "sap_horizon_dark",
+            "language": "EN"
+        }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="../../bundle.esm.js" type="module"></script>
+</head>
+
+<body>
+<my-vocab-creator></my-vocab-creator>
+<my-grid id="myFirstComponent"></my-grid>
+<div class="app-settings">
+
+    <h2>Switch themes</h2>
+    <div style="display: flex; flex-direction: row;">
+        <a class="link" href="?sap-ui-theme=sap_horizon">Horizon</a>
+        <a class="link" href="?sap-ui-theme=sap_horizon_dark">Horizon Dark</a>
+        <a class="link" href="?sap-ui-theme=sap_horizon_hcb">Horizon High Contrast Black</a>
+        <a class="link" href="?sap-ui-theme=sap_horizon_hcw">Horizon High Contrast White</a>
+    </div>
+
+    <h2>Switch language</h2>
+    <div>
+        <a class="link" href="?sap-ui-language=en">English</a>
+        <a class="link" href="?sap-ui-language=de">German</a>
+    </div>
+</div>
+</body>
+</html>

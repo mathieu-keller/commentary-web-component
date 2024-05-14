@@ -1,27 +1,33 @@
 {
-  "name": "commentary-service",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.ts",
-  "scripts": {
-    "webpack": "webpack",
-    "webpack:watch": "webpack --watch",
-    "build:analyze": "webpack --env ANALYZE=true",
-    "tsc:watch": "tsc --watch",
-    "format": "prettier --write ./src",
-    "yarn": "yarn"
+  "name": "grid",
+  "version": "0.0.1",
+  "ui5": {
+    "webComponentsPackage": true
   },
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "clean": "wc-dev clean",
+    "lint": "wc-dev lint",
+    "start": "wc-dev start",
+    "watch": "wc-dev watch",
+    "build": "wc-dev build",
+    "test": "wc-dev test",
+    "create-ui5-element": "wc-create-ui5-element",
+    "prepublishOnly": "npm run build"
+  },
+  "exports": {
+    "./src/*": "./src/*",
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json",
+    "./bundle.js": "./bundle.js",
+    "./*": "./dist/*"
+  },
+  "dependencies": {
+    "@ui5/webcomponents-base": "1.24.3",
+    "@ui5/webcomponents-theming": "1.24.3"
+  },
   "devDependencies": {
-    "html-webpack-plugin": "5.6.0",
-    "prettier": "3.2.5",
-    "ts-loader": "9.5.1",
-    "copy-webpack-plugin": "12.0.2",
-    "typescript": "5.4.5",
-    "webpack": "5.91.0",
-    "webpack-bundle-analyzer": "4.10.2",
-    "webpack-cli": "5.1.4",
-    "webpack-null-plugin": "0.0.2"
+    "@ui5/webcomponents-tools": "1.24.3",
+    "chromedriver": "*",
+    "typescript": "^4.9.4"
   }
 }

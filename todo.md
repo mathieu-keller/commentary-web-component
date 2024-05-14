@@ -1,0 +1,10 @@
+- [ ] 3 columns and 4 rows
+- [ ] events
+- [ ] data / state
+- [ ] attributes
+- [ ] hide one attribute
+- [ ] theming
+- [ ] Angular
+- [ ] documentation
+- [ ] i18n
+- [ ] accessibility (ARIA)

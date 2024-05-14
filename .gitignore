@@ -1,4 +1,4 @@
-/commentary-service.iml
-/dist/
-/node_modules/
-/.idea/
+node_modules
+dist
+jsdoc-dist
+src/generated
