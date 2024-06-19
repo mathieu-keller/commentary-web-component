@@ -19,7 +19,7 @@
     "ts-loader": "9.5.1",
     "copy-webpack-plugin": "12.0.2",
     "typescript": "5.4.5",
-    "webpack": "5.92.0",
+    "webpack": "5.92.1",
     "webpack-bundle-analyzer": "4.10.2",
     "webpack-cli": "5.1.4",
     "webpack-null-plugin": "0.0.2"
